@@ -12,13 +12,18 @@ const plans = [
   {
     index: 0,
     name: "Basic",
-    price: " US $499",
+    price: "$599",
     features: [
       "Fully responsive on all screens",
 
       "Design + Development",
 
       "Private communication channel",
+
+      "Short Form Video Content for Social Media",
+
+      "Hosting Setup",
+
       "1-3 days turnaround time",
     ],
     style:
@@ -30,11 +35,14 @@ const plans = [
   {
     index: 1,
     name: "Premium",
-    price: "US $1299",
+    price: "$1299",
     features: [
       "Fully responsive on all screens",
-      "React / Next.js / Tailwind CSS code",
+      "PHP / React / Next.js / Tailwind CSS code",
       "Design + Development",
+      "Hosting Setup",
+      "Short Form Video Content for Social Media",
+      "Basic AI Automation Workflow",
       "24-hour support response time",
       "Private communication channel",
       "3-5 days turnaround time",
@@ -48,13 +56,16 @@ const plans = [
   {
     index: 2,
     name: "Enterprise",
-    feature: "Contact Us",
+    //feature: "Contact Us",
     price: "Let's Talk!",
     features: [
       "Fully responsive on all screens",
-      "React / Next.js / Tailwind CSS code",
+      "PHP / React / Next.js / Tailwind CSS code",
       "Design + Development",
+      "Hosting Setup",
       "Unlimited Revisions",
+      "Short Form Video Content for Social Media",
+      "Advanced AI Automation Workflow",
       "24-hour support response time",
       "Private communication channel",
       "Priority Development Queue",
@@ -96,11 +107,6 @@ const Pricing = () => {
                   <div className="text-4xl flex  items-center font-medium">
                     {plan.name}
                     {/* render feature tag only for enterprise tab*/}
-                    {plan.feature === "Contact Us" && (
-                      <div className="text-sm font-medium text-blue-600 bg-blue-100 px-2 py-1 rounded-full ml-4 items-center ">
-                        Contact Us
-                      </div>
-                    )}
                   </div>
                   <div className="text-3xl pt-6 ">{plan.price}</div>
                   <div className="py-6">{plan.description}</div>
@@ -112,11 +118,6 @@ const Pricing = () => {
                         className="text-lg  py-2 flex space-x-2 items-center"
                       >
                         {/* render checkmark only for enterprise tab*/}
-                        {plan.feature === "Contact Us" ? (
-                          <PiCheckCircleFill className="text-blue-400 mr-2 text-xl" />
-                        ) : (
-                          <PiCheckCircleFill className="text-green-600 mr-2 text-xl" />
-                        )}
 
                         {feature}
                       </li>
