@@ -20,18 +20,18 @@ export async function POST(req: Request) {
 
 
       const transporter = nodemailer.createTransport({
-        host: "smtp.gmail.com",
+        host: "mail.impactifydigital.com",
         port: 465,
         secure: true,
         auth: {
-          user: "tasicigor123@gmail.com",
-          pass: "bsel kcxt drvb srcx",
+          user: "contact@impactifydigital.com",
+          pass: "impactify@11",
         },
       });
 
       const mailOptions = {
         from: email,
-        to: "tasicigor123@gmail.com",
+        to: "contact@impactifydigital.com",
         subject: "Contact Form Submission",
         html: `
                     <h1>Contact Form</h1>

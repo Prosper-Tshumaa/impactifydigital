@@ -22,7 +22,7 @@
     "framer-motion": "^11.0.5",
     "lucide-react": "^0.331.0",
     "next": "^14.2.3",
-    "nodemailer": "^6.9.9",
+    "nodemailer": "^6.9.13",
     "react": "^18",
     "react-calendly": "^4.3.0",
     "react-dom": "^18",
